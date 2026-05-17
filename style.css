@@ -1,3 +1,5 @@
+/* style.css */
+
 *{
   margin:0;
   padding:0;
@@ -51,9 +53,13 @@ a{
 
 .top-btn{
   border:1px solid rgba(255,255,255,0.2);
+
   padding:18px 28px;
+
   border-radius:999px;
+
   color:white;
+
   transition:0.3s ease;
 }
 
@@ -69,18 +75,23 @@ a{
 
 .hero-content h1{
   font-size:clamp(4rem,10vw,8rem);
+
   line-height:0.95;
+
   letter-spacing:-6px;
+
   font-weight:600;
 }
 
 .hero-content p{
   margin-top:40px;
+
   max-width:700px;
 
   color:#9ed7da;
 
   font-size:24px;
+
   line-height:1.7;
 }
 
@@ -105,6 +116,102 @@ a{
   color:black;
 }
 
+
+
+/* SERVICES */
+
+.services-section{
+  padding:120px 5%;
+  background:#000;
+}
+
+.services-heading{
+  margin-bottom:50px;
+}
+
+.services-heading span{
+  color:#55d9df;
+
+  font-size:13px;
+
+  font-weight:700;
+
+  letter-spacing:2px;
+}
+
+.services-heading h2{
+  margin-top:18px;
+
+  font-size:clamp(2.5rem,5vw,4rem);
+
+  letter-spacing:-3px;
+
+  line-height:1;
+}
+
+.services-grid{
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:24px;
+}
+
+.service-box{
+  border:1px solid rgba(255,255,255,0.12);
+
+  border-radius:22px;
+
+  padding:36px 30px;
+
+  transition:0.3s ease;
+
+  background:rgba(255,255,255,0.02);
+}
+
+.service-box:hover{
+  border-color:rgba(255,255,255,0.35);
+
+  transform:translateY(-4px);
+}
+
+.service-icon{
+  width:56px;
+  height:56px;
+
+  border-radius:14px;
+
+  border:1px solid rgba(255,255,255,0.15);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:22px;
+
+  margin-bottom:24px;
+
+  color:#55d9df;
+}
+
+.service-box h3{
+  font-size:28px;
+
+  margin-bottom:18px;
+
+  letter-spacing:-1px;
+}
+
+.service-box p{
+  color:#9a9a9a;
+
+  line-height:1.8;
+}
+
+
+
+/* WORK */
+
 .work-section{
   padding:120px 5%;
   background:#000;
@@ -113,6 +220,7 @@ a{
 .section-heading{
   display:flex;
   justify-content:space-between;
+
   gap:60px;
 
   margin-bottom:70px;
@@ -120,8 +228,11 @@ a{
 
 .section-heading span{
   color:#55d9df;
+
   font-size:13px;
+
   font-weight:700;
+
   letter-spacing:2px;
 }
 
@@ -149,6 +260,7 @@ a{
 
 .project-card{
   display:grid;
+
   grid-template-columns:1.1fr 1fr;
 
   gap:40px;
@@ -170,6 +282,7 @@ a{
 
 .project-image{
   border-radius:16px;
+
   overflow:hidden;
 
   border:1px solid rgba(255,255,255,0.25);
@@ -177,22 +290,29 @@ a{
 
 .project-info{
   display:flex;
+
   flex-direction:column;
+
   justify-content:center;
 }
 
 .project-info span{
   color:#55d9df;
+
   font-size:13px;
+
   font-weight:700;
+
   letter-spacing:1.5px;
 }
 
 .project-info h3{
   font-size:48px;
+
   line-height:1;
 
   margin-top:18px;
+
   margin-bottom:24px;
 
   letter-spacing:-2px;
@@ -200,10 +320,17 @@ a{
 
 .project-info p{
   color:#a5a5a5;
+
   line-height:1.9;
+
   font-size:18px;
+
   max-width:500px;
 }
+
+
+
+/* CTA */
 
 .cta-section{
   padding:160px 5% 120px;
@@ -222,7 +349,9 @@ a{
   color:#55d9df;
 
   font-size:13px;
+
   letter-spacing:2px;
+
   font-weight:700;
 }
 
@@ -234,6 +363,11 @@ a{
   line-height:1;
 
   letter-spacing:-3px;
+
+  max-width:950px;
+
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .cta-btn{
@@ -261,7 +395,9 @@ a{
   margin-top:50px;
 
   display:flex;
+
   justify-content:center;
+
   gap:30px;
 }
 
@@ -269,7 +405,15 @@ a{
   color:#888;
 }
 
-@media(max-width:1000px){
+
+
+/* RESPONSIVE */
+
+@media(max-width:1100px){
+
+  .services-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
 
   .section-heading{
     flex-direction:column;
@@ -286,6 +430,10 @@ a{
 }
 
 @media(max-width:700px){
+
+  .services-grid{
+    grid-template-columns:1fr;
+  }
 
   .hero{
     padding:30px 6% 80px;
@@ -317,7 +465,9 @@ a{
 
   .top-bar{
     flex-direction:column;
+
     align-items:flex-start;
+
     gap:20px;
   }
 
