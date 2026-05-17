@@ -85,6 +85,10 @@ img {
   align-items: center;
 
   margin-bottom: 120px;
+
+  padding-bottom: 80px;
+
+  border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
 .project-card:nth-child(even) {
