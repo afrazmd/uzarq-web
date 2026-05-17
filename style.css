@@ -6,6 +6,10 @@
   box-sizing:border-box;
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
 body{
   font-family:'Inter',sans-serif;
   background:#000;
@@ -29,16 +33,16 @@ a{
 .hero{
   min-height:100vh;
 
-  padding:40px 5% 100px;
+  padding:40px 5% 120px;
 
   background:
   radial-gradient(circle at top right,
-  rgba(0,160,170,0.35),
-  transparent 35%),
+  rgba(0,140,150,0.28),
+  transparent 30%),
 
   radial-gradient(circle at bottom left,
-  rgba(0,120,100,0.25),
-  transparent 30%),
+  rgba(0,90,80,0.25),
+  transparent 28%),
 
   #000;
 }
@@ -50,15 +54,15 @@ a{
 }
 
 .logo{
-  font-size:32px;
+  font-size:28px;
   font-weight:800;
   letter-spacing:-1px;
 }
 
 .top-btn{
-  border:1px solid rgba(255,255,255,0.2);
-
   padding:18px 28px;
+
+  border:1px solid rgba(255,255,255,0.15);
 
   border-radius:999px;
 
@@ -73,14 +77,15 @@ a{
 }
 
 .hero-content{
-  margin-top:140px;
-  max-width:900px;
+  max-width:850px;
+
+  margin-top:130px;
 }
 
 .hero-content h1{
-  font-size:clamp(3.5rem,8vw,6.5rem);
+  font-size:clamp(4rem,8vw,7rem);
 
-  line-height:0.92;
+  line-height:0.95;
 
   letter-spacing:-5px;
 
@@ -88,7 +93,7 @@ a{
 }
 
 .hero-content p{
-  margin-top:36px;
+  margin-top:34px;
 
   max-width:650px;
 
@@ -102,13 +107,13 @@ a{
 .hero-btn{
   display:inline-block;
 
-  margin-top:50px;
-
-  border:1px solid rgba(255,255,255,0.15);
+  margin-top:45px;
 
   padding:20px 34px;
 
   border-radius:999px;
+
+  border:1px solid rgba(255,255,255,0.15);
 
   color:white;
 
@@ -123,10 +128,12 @@ a{
 
 
 
+
 /* SERVICES */
 
 .services-section{
   padding:120px 5%;
+
   background:#000;
 }
 
@@ -163,21 +170,21 @@ a{
 }
 
 .service-box{
-  border:1px solid rgba(255,255,255,0.12);
+  padding:34px;
 
   border-radius:22px;
 
-  padding:36px 30px;
-
-  transition:0.3s ease;
+  border:1px solid rgba(255,255,255,0.12);
 
   background:rgba(255,255,255,0.02);
+
+  transition:0.3s ease;
 }
 
 .service-box:hover{
-  border-color:rgba(255,255,255,0.35);
+  transform:translateY(-5px);
 
-  transform:translateY(-4px);
+  border-color:rgba(255,255,255,0.3);
 }
 
 .service-icon{
@@ -186,17 +193,17 @@ a{
 
   border-radius:14px;
 
-  border:1px solid rgba(255,255,255,0.15);
-
   display:flex;
   align-items:center;
   justify-content:center;
 
-  font-size:22px;
+  border:1px solid rgba(255,255,255,0.14);
+
+  color:#55d9df;
 
   margin-bottom:24px;
 
-  color:#55d9df;
+  font-size:22px;
 }
 
 .service-box h3{
@@ -208,7 +215,7 @@ a{
 }
 
 .service-box p{
-  color:#9a9a9a;
+  color:#999;
 
   line-height:1.8;
 }
@@ -216,40 +223,23 @@ a{
 
 
 
+
 /* WORK */
 
 .work-section{
-  position:relative;
-
   padding:140px 5%;
 
   background:#000;
 }
 
-.work-section::before{
-  content:"";
-
-  position:absolute;
-
-  top:0;
-  left:5%;
-  right:5%;
-
-  height:1px;
-
-  background:rgba(255,255,255,0.08);
-}
-
 .section-heading{
   display:grid;
 
-  grid-template-columns:1.2fr 0.8fr;
+  grid-template-columns:1.1fr 0.9fr;
 
-  gap:120px;
+  gap:80px;
 
-  align-items:start;
-
-  margin-bottom:90px;
+  margin-bottom:80px;
 }
 
 .section-heading span{
@@ -263,29 +253,27 @@ a{
 }
 
 .section-heading h2{
-  margin-top:18px;
+  margin-top:20px;
 
-  font-size:clamp(3rem,5vw,5.5rem);
+  font-size:clamp(2.8rem,5vw,5rem);
 
-  line-height:0.92;
+  line-height:0.95;
 
   letter-spacing:-4px;
 
-  max-width:780px;
-
-  font-weight:700;
+  max-width:760px;
 }
 
 .section-heading p{
-  max-width:420px;
-
   color:#8d8d8d;
-
-  line-height:1.9;
 
   font-size:18px;
 
-  margin-top:70px;
+  line-height:1.9;
+
+  margin-top:60px;
+
+  max-width:450px;
 }
 
 .project-card{
@@ -295,25 +283,25 @@ a{
 
   gap:40px;
 
-  padding:28px;
-
-  border:1px solid rgba(255,255,255,0.15);
+  padding:26px;
 
   border-radius:24px;
 
+  border:1px solid rgba(255,255,255,0.14);
+
   margin-bottom:28px;
 
-  transition:0.3s ease;
+  background:rgba(255,255,255,0.02);
 
-  background:rgba(255,255,255,0.01);
+  transition:0.3s ease;
 }
 
 .project-card:hover{
-  border-color:rgba(255,255,255,0.4);
+  border-color:rgba(255,255,255,0.35);
 }
 
 .project-image{
-  border-radius:16px;
+  border-radius:18px;
 
   overflow:hidden;
 
@@ -322,9 +310,7 @@ a{
 
 .project-info{
   display:flex;
-
   flex-direction:column;
-
   justify-content:center;
 }
 
@@ -339,19 +325,19 @@ a{
 }
 
 .project-info h3{
-  font-size:48px;
-
-  line-height:1;
+  font-size:46px;
 
   margin-top:18px;
 
-  margin-bottom:24px;
+  margin-bottom:22px;
+
+  line-height:1;
 
   letter-spacing:-2px;
 }
 
 .project-info p{
-  color:#a5a5a5;
+  color:#a0a0a0;
 
   line-height:1.9;
 
@@ -359,6 +345,107 @@ a{
 
   max-width:500px;
 }
+
+
+
+
+
+/* CONTACT */
+
+.contact-form-section{
+  padding:140px 5%;
+
+  background:#000;
+}
+
+.form-heading span{
+  color:#55d9df;
+
+  font-size:13px;
+
+  font-weight:700;
+
+  letter-spacing:2px;
+}
+
+.form-heading h2{
+  margin-top:18px;
+
+  margin-bottom:60px;
+
+  font-size:clamp(3rem,5vw,5rem);
+
+  line-height:0.95;
+
+  letter-spacing:-3px;
+}
+
+.contact-form{
+  max-width:700px;
+
+  display:flex;
+  flex-direction:column;
+
+  gap:22px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding:22px;
+
+  border-radius:18px;
+
+  border:1px solid rgba(255,255,255,0.12);
+
+  background:rgba(255,255,255,0.03);
+
+  color:white;
+
+  font-size:16px;
+
+  outline:none;
+
+  transition:0.3s ease;
+
+  font-family:'Inter',sans-serif;
+}
+
+.contact-form textarea{
+  min-height:180px;
+
+  resize:vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+  border-color:#55d9df;
+}
+
+.contact-form button{
+  width:fit-content;
+
+  padding:20px 34px;
+
+  border-radius:999px;
+
+  border:1px solid rgba(255,255,255,0.2);
+
+  background:transparent;
+
+  color:white;
+
+  cursor:pointer;
+
+  font-size:16px;
+
+  transition:0.3s ease;
+}
+
+.contact-form button:hover{
+  background:white;
+  color:black;
+}
+
 
 
 
@@ -372,7 +459,7 @@ a{
 
   background:
   radial-gradient(circle at center,
-  rgba(0,160,170,0.18),
+  rgba(0,150,160,0.15),
   transparent 35%),
 
   #000;
@@ -383,13 +470,13 @@ a{
 
   font-size:13px;
 
-  letter-spacing:2px;
-
   font-weight:700;
+
+  letter-spacing:2px;
 }
 
 .cta-section h2{
-  margin-top:26px;
+  margin-top:24px;
 
   font-size:clamp(3rem,6vw,5rem);
 
@@ -397,7 +484,7 @@ a{
 
   letter-spacing:-3px;
 
-  max-width:900px;
+  max-width:850px;
 
   margin-left:auto;
   margin-right:auto;
@@ -428,7 +515,6 @@ a{
   margin-top:50px;
 
   display:flex;
-
   justify-content:center;
 
   gap:30px;
@@ -437,6 +523,7 @@ a{
 .footer-links a{
   color:#888;
 }
+
 
 
 
@@ -462,24 +549,24 @@ a{
     grid-template-columns:1fr;
   }
 
-  .project-info h3{
-    font-size:38px;
-  }
-
 }
 
 @media(max-width:700px){
 
-  .services-grid{
-    grid-template-columns:1fr;
+  .hero{
+    padding:30px 6% 90px;
   }
 
-  .hero{
-    padding:30px 6% 80px;
+  .top-bar{
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:20px;
   }
 
   .hero-content{
-    margin-top:100px;
+    margin-top:90px;
   }
 
   .hero-content h1{
@@ -490,24 +577,20 @@ a{
     font-size:18px;
   }
 
+  .services-grid{
+    grid-template-columns:1fr;
+  }
+
   .section-heading h2{
     letter-spacing:-2px;
   }
 
   .project-info h3{
-    font-size:32px;
+    font-size:34px;
   }
 
   .cta-section h2{
     letter-spacing:-2px;
-  }
-
-  .top-bar{
-    flex-direction:column;
-
-    align-items:flex-start;
-
-    gap:20px;
   }
 
 }
