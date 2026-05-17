@@ -1,1 +1,237 @@
+/* style.css */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f7f7f5;
+  color: #111111;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.hero {
+  padding: 120px 8%;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.eyebrow {
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+  color: #00b7ff;
+  font-weight: 700;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 0.95;
+  font-weight: 800;
+  margin-bottom: 32px;
+  letter-spacing: -3px;
+}
+
+.hero-text {
+  max-width: 650px;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #111;
+  color: white;
+
+  padding: 18px 32px;
+
+  text-decoration: none;
+  border-radius: 999px;
+
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+.hero-btn:hover {
+  background: #00b7ff;
+  color: #111;
+}
+
+.projects-section {
+  padding: 80px 8%;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 50px;
+
+  align-items: center;
+
+  margin-bottom: 120px;
+}
+
+.project-card:nth-child(even) {
+  direction: rtl;
+}
+
+.project-card:nth-child(even) .project-info {
+  direction: ltr;
+}
+
+.project-image {
+  overflow: hidden;
+  border-radius: 28px;
+  background: #ececec;
+}
+
+.project-image img {
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.04);
+}
+
+.project-info {
+  max-width: 500px;
+}
+
+.project-type {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #00b7ff;
+}
+
+.project-info h2 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1;
+  margin-top: 18px;
+  margin-bottom: 24px;
+  letter-spacing: -2px;
+}
+
+.project-info p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.contact-section {
+  padding: 120px 8%;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.contact-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #00b7ff;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.contact-section h2 {
+  max-width: 800px;
+
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 1;
+
+  letter-spacing: -3px;
+
+  margin-bottom: 40px;
+}
+
+.contact-btn {
+  display: inline-flex;
+
+  background: #111;
+  color: white;
+
+  padding: 18px 32px;
+
+  border-radius: 999px;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #00b7ff;
+  color: #111;
+}
+
+@media (max-width: 950px) {
+
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .project-card:nth-child(even) {
+    direction: ltr;
+  }
+
+  .hero {
+    padding-top: 100px;
+  }
+
+  .hero h1 {
+    letter-spacing: -2px;
+  }
+
+  .project-info h2 {
+    letter-spacing: -1px;
+  }
+
+  .contact-section h2 {
+    letter-spacing: -2px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .hero {
+    padding: 90px 7%;
+  }
+
+  .projects-section {
+    padding: 70px 7%;
+  }
+
+  .contact-section {
+    padding: 90px 7%;
+  }
+
+  .hero-text,
+  .project-info p {
+    font-size: 16px;
+  }
+
+  .hero-btn,
+  .contact-btn {
+    width: 100%;
+  }
+
+  .project-card {
+    margin-bottom: 90px;
+  }
+}
